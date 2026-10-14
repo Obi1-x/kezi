@@ -1,5 +1,6 @@
-// Import and inject Vercel Analytics
-import { inject } from '@vercel/analytics';
+import { inject } from 'https://esm.sh/@vercel/analytics@1.1.1';
 
-// Initialize Vercel Analytics
-inject();
+inject({
+  mode: 'auto',
+  debug: true
+});
